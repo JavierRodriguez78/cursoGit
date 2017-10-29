@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+            <div class="slides">
+                <section id="bloque-1">
+                    <section id="Titulo">
+                        <h1>GIT</h1>
+                        <h2>Curso de introducción</h2>
+
+                    </section>
+                    <section id="que-es-git">
+                        <h2>Que es git</h2>
+                        <p>Git es un sistema distribuido de control de versiones.</p>
+                        <p>Cada dev tiene su propia copia del código.</p>
+                    </section>
+
+                    <section id="creador" data-background="/assets/linustovards.gif">
+                        <h2>El creador es Linus Torvalds</h2>
+                    </section>
+
+                    <section id="creador-2">
+                        <h2>El creador es Linus Torvalds</h2>
+                        <p>A partir de Bitkeeper</p>
+                        <p>Año 2005</p>
+                        <p>Desarrollo del núcleo de línux</p>
+                    </section>
+
+                    <section id="descentralizado">
+                        <h2>Es descentralizado</h2>
+                        <p>No necesitas conectarte a un servidor obligatoriamente.</p>
+                        <p>Puedes comitera en tu PC incluso sin un server remoto.</p>
+                    </section>
+                    <section id="flexible">
+                        <h2>Es <strong>MUY</strong> flexible</h2>
+                        <p>Hay muchas maneras de hacer una mima cosa, y esto te permite utilizar  distintos workflows</p>
+                        <p>Podemos optar por que el que mejor se adapte a tus necesidades</p>
+                    </section>
+                    <section id="ignores">
+                        <h2>Tiene un ignore fácil de usar</h2>
+                        <p>Así nos evitamos comitear archivos que no queremos en el repo.</p>
+                        <p><small>Como librerías jars, node_modules, obj, archivos del ide que utilizamos, etc.</small></p>
+                    </section>
+                    <section>
+                        <h2>OpenSource y gratuito</h2>
+                        <p>Es completamente gratuito y además mantenido por una gran comunidad</p>
+                        <p>Además surgen diversos proyectos basados en git muy interesantes</p>
+                        <a href="https://about.gitlab.com/">GitLab</a>
+                    </section>
+                    <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+                        <h2> Os habéis convencido???</h2>
+                        <h3> No!!! pues continuemos!!!</h3>
+                    </section>
+
+                </section>
+                <section id="bloque-2">
+                    <section id="otros_protocolos">
+                        <h2> ¿Sòlo existe Git?</h2>
+                        <p>No, existe otros protocolos como por ejemplo y muy conocido que es Subversion</p>
+                    </section>
+                    <section id="diferencias_subversion_git">
+                        <h2>Diferencias entre subversion y git</h2>
+                        <img width="400" height="400" data-src="/assets/centralized-vs-distributed.png"/>
+                    </section>
+                    <section id="diferencias_subversion_git2">
+                        <h2>Git está concebido como snapshots</h2>
+                        <hr>
+                        <h4 style="text-align: left">Subversion</h4>
+                        <img style="float: left;" width="400" height="200" data-src="/assets/deltassvn.png"/>
+                        <h4 style="text-align:right">GIT</h4>
+                        <img style="float:right" width="400" height="200" data-src="/assets/snapshotsgit.png">
+                    </section>
+                    <section id="flujodetrabajo">
+                        <h2>Git Flujo de trabajo</h2>
+                        <img width="800" height="400" data-src="/assets/flujodetrabajo.png">
+                    </section>
+                </section>
+                <section id="bloque-3">
+                    <section id="instalacion_git">
+                        <img width="150" height="100" data-src="/assets/logogit.png" style="float:left">
+                        <h2>Donde me puedo descargar git</h2>
+                        <a href ="https://git-scm.com">https://git-scm.com</a>
+                    </section>
+                    <section id="instalacion_windows">
+                        <h2>Descarga para windows 32/64 bits</h2>
+                        <a href ="https://git-scm.com/download/win">https://git-scm.com/download/win</a>
+                        <p>Instalación de Git como una aplicación más</p>
+                        <img width="250" height="200" data-src="/assets/intallgit.jpg">
+                    </section>
+                    <section id="instalacion_windows_2">
+                        <h2>Opción recomendable</h2>
+                        <p>Durante el proceso de instalación es interesante tener en cuenta esta opción</p>
+                        <p>de esta forma tendremos acceso a Git desde la ventana de comandos de Windows</p>
+                        <img width="250" height="200" data-src="/assets/installwindowoption.png">
+                    </section>
+                    <section id="instalacion_linux">
+                        <h2>Instalación en linux</h2>
+                        <a href ="https://git-scm.com/download/linux">hhttps://git-scm.com/download/linux</a>
+                        <p>Instalación de Git mediante terminal</p>
+                        <blockquote>
+                            Debian/Ubuntu
+                             # apt-get install git
+                            Fedora
+                             # yum install git (up to Fedora 21)
+                             # dnf install git (Fedora 22 and later)
+                        </blockquote>
+                    </section>
+                    <section id="GuiClientes">
+                        <h2>Clientes GUI</h2>
+                        <p> Exise una gran variedad de clientes para diferentes</p>
+                        <p> sistemas operativos y mucho de ellos opensource</p>
+                        <a href="https://git-scm.com/downloads/guis">https://git-scm.com/downloads/guis</a>
+                    </section>
+                    <section id="sourceTree">
+                        <img width="150" height="50" data-src="/assets/Sourcetree-blue.svg">
+                        <h2>SOURCETREE</h2>
+                        <p> Es un gui muy potente para Windows / Mac</p>
+                        <p> Es gratuita y al ser desarrollada por Atlassian </p>
+                        <p> se integra con sus herramientas</p>
+                        <a href="https://www.sourcetreeapp.com/">https://www.sourcetreeapp.com/</a>
+                    </section>
+                    <section data-background="http://i.giphy.com/ehKrjRCEacBBS.gif">
+                        <h2> Bueno aburridos!!!!!</h2>
+                        <h3> Pues ahora un poco de trabajo.</h3>
+                    </section>
+                </section>
+                <section id="bloque-4">
+                    <section id="configuracion-git">
+                        <h2> Configuración git por primera vez.</h2>
+                        <p>Tenemos mucha documentación disponible</p>
+                        <a href ="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup">https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup</a>
+                    </section>
+                    <section id="identidad">
+                    <h2>Identidad</h2>
+                    <p>Debemos configurar nuestra identidad en git</p>
+                    <p>Si no la primera vez que utilizemos la herramienta</p>
+                    <p> Nos pedira la misma.</p>
+                    <pre><code class="hljs" data-trim contenteditable>
+                        $ git config --global user.name "John Doe"
+                        $ git config --global user.email johndoe@example.com
+                    </code></pre>
+                    </section>
+                    <section id="parametros-configurados">
+                        <h2>Parametros configurados</h2>
+                        <p>Para saber los parámetros que tenemos configurados</p>
+                        <p>En el terminal escribimos los siguiente</p>
+                        <pre><code class="hljs" data-trim contenteditable>
+                            $ git config --list
+                       </code></pre>
+                    </section>
+                    <section id="ayuda-git">
+                        <h2>Help</h2>
+                        <p>Para obtener ayuda de los comandos</p>
+                        <pre><code class="hljs" data-trim contenteditable>
+                            $ git help
+                            $ git help |verb|
+                       </code></pre>
+                    </section>
+                </section>
+                <section id="Estructura de Git">
+                    <section id="intro_estructura">
+                        <h2>Ahora vamos a ver como funciona Git</h2>
+                        <p> Creamos nuestro primer repositorio local</p>
+                    </section>
+                   <section id="primer_repositorio">
+                       <h2>Nuestro primer repositorio local</h2>
+                       <p>Abrimo un nuevo terminal</p>
+                       <p>nos posicionamos en un directorio y escribimos:</p>
+                       <pre><code class="hljs" data-trim contenteditable>
+                            $ git init
+                       </code></pre>
+                   </section>
+                    <section id="Estructura">
+                        <h2>Repositorio local</h2>
+                        <p> Se localiza en la carpeta que hemos inicializado</p>
+                        <p> el repositorio</p>
+                        <pre><code class="hljs" data-trim contenteditable>
+                        $ .git
+                    </code></pre>
+                    </section>
+                    <section id="Carpetas">
+                        <h2>Aquí se encuentra el repositorio local</h2>
+                        <img width="250" height="200" data-src="/assets/carpetagit.jpg">
+                    </section>
+                    <section id="Blobs">
+                        <h2>Blobs</h2>
+                        <p>Representan el contenido de uno o varios archivos</p>
+                        <p>Se identifica por su SHA1 no por su nombre</p>
+                        <p>El único que sabe a que archivo corresponde cada blob es el TREE</p>
+                        <p>No hay copias de los blobs.</p>
+                        <img width="250" height="200" data-src="/assets/blob.svg">
+                    </section>
+                    <section id="Tree">
+                        <h2>Tree</h2>
+                        <p>El objeto tree relaciona los blobs con los nombres de los ficheros.</p>
+                        <img width="250" height="200" data-src="/assets/tree.png">
+                    </section>
+                    <section id="Commit">
+                        <h2>Commit</h2>
+                        <p>El commit es un snapshot del estado de los ficheros en un momento concreto</p>
+                        <p>No se almacenan deltas como en SVN sino ficheros enteros.</p>
+                        <p>No hay Blobs duplicados.</p>
+                        <p> Se identifican por su SHA1</p>
+                    </section>
+                    <section id="Commit2">
+                        <h2>Commit</h2>
+                        <img width="250" height="200" data-src="/assets/commit.png">
+                    </section>
+                    <section id="Tag">
+                        <h2>Tag</h2>
+                        <p>Son etiquetas que se pueden aplicar a commits.</p>
+                        <p> Por ejemplo para identificar versiones estables de un producto.</p>
+                        <img width="250" height="200" data-src="/assets/tag.png">
+                    </section>
+                    <section id="Head">
+                        <h2>Head</h2>
+                        <p>Es un puntero que apunta al commit actual</p>
+                        <img width="250" height="200" data-src="/assets/head.png">
+                    </section>
+                    <section id="Remote">
+                        <h2>Remote</h2>
+                        <p>Es la url de una copia del repositorio</p>
+                        <img width="250" height="200" data-src="/assets/remote.png">
+                    </section>
+                    <section id="Origin">
+                        <h2>Origin</h2>
+                        <p>Es el remote desde el que se clonó el repositorio inicalmente</p>
+                        <img width="250" height="200" data-src="/assets/origin.png">
+                    </section>
+                    <section id="Branches">
+                        <h2>Branches</h2>
+                        <p>Una rama es una lista de commits</p>
+                        <p>Se suele representar como un puntero a un commit</p>
+                        <p>Cuando se hace commit, el HEAD de la rama se mueve al nuevo commit que ahora tiene como padre el commit anterior</p>
+                        <img width="250" height="200" data-src="/assets/branch.png">
+                    </section>
+                    <section id="Index">
+                        <h2>Index</h2>
+                        <p>Es un fichero binario(cache)</p>
+                        <p>Dinámico y temporal</p>
+                        <p>Representa la estructura de directorios actual del repo</p>
+                        <p>Captura la versión del repo completo en algún momento del tiempo</p>
+
+                    </section>
+                    <section id="Index2">
+                        <h2>Index</h2>
+                        <p>El contenido del índice es que se metera en el próximo commit</p>
+                        <img width="250" height="200" data-src="/assets/index.png">
+                    </section>
+                </section>
+                <section data-background="/assets/end1parte.gif">
+                    <h2>Fin de la primera parte</h2>
+                </section>
+            </div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
